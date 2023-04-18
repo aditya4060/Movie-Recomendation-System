@@ -124,7 +124,7 @@ html {
 }
 
 body {
-  background: var(--alice-blue-1);
+  background: var(rgb(118, 20, 20));
   overflow-x: hidden;
 }
 
@@ -142,7 +142,7 @@ body {
 
 ::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
 
-
+/*--alice-blue-1)*\
 
 
 
@@ -224,7 +224,7 @@ button, a { transition: var(--transition); }
 .header-contact { display: none; }
 
 .header {
-  background: var(--alice-blue-1);
+  background: var(--mimi-pink);
   position: fixed;
   top: 0;
   left: 0;
@@ -391,10 +391,10 @@ button, a { transition: var(--transition); }
 
 
 /*-----------------------------------*\
-  #FEATURED CAR
+  #FEATURED MOVIE
 \*-----------------------------------*/
 
-.featured-car .title-wrapper {
+.featured-movie .title-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -403,7 +403,7 @@ button, a { transition: var(--transition); }
   margin-bottom: 30px;
 }
 
-.featured-car-link {
+.featured-movie-link {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -411,24 +411,24 @@ button, a { transition: var(--transition); }
   font-size: var(--fs-6);
 }
 
-.featured-car-link span { transition: var(--transition); }
+.featured-movie-link span { transition: var(--transition); }
 
-.featured-car-link:is(:hover, :focus) span { color: var(--space-cadet); }
+.featured-movie-link:is(:hover, :focus) span { color: var(--space-cadet); }
 
-.featured-car-link ion-icon {
+.featured-movie-link ion-icon {
   margin-top: 3px;
   transition: var(--transition);
 }
 
-.featured-car-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
+.featured-movie-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
 
-.featured-car-list {
+.featured-movie-list {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 30px;
 }
 
-.featured-car-card {
+.featured-movie-card {
   background: var(--gradient);
   border: 1px solid var(--white);
   border-radius: var(--radius-18);
@@ -436,21 +436,21 @@ button, a { transition: var(--transition); }
   box-shadow: var(--shadow-1);
 }
 
-.featured-car-card .card-banner {
+.featured-movie-card .card-banner {
   background: hsla(0, 0%, 0%, 0.2);
   aspect-ratio: 3 / 2;
   border-radius: var(--radius-18);
   overflow: hidden;
 }
 
-.featured-car-card .card-banner > img {
+.featured-movie-card .card-banner > img {
   height: 100%;
   object-fit: cover;
 }
 
-.featured-car-card .card-content { padding: 20px 10px 10px; }
+.featured-movie-card .card-content { padding: 20px 10px 10px; }
 
-.featured-car-card .card-title-wrapper {
+.featured-movie-card .card-title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -458,9 +458,9 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
-.featured-car-card .card-title { width: calc(100% - 60px); }
+.featured-movie-card .card-title { width: calc(100% - 60px); }
 
-.featured-car-card .card-title > a {
+.featured-movie-card .card-title > a {
   color: inherit;
   width: 100%;
   white-space: nowrap;
@@ -468,9 +468,9 @@ button, a { transition: var(--transition); }
   text-overflow: ellipsis;
 }
 
-.featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
+.featured-movie-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.featured-car-card .year {
+.featured-movie-card .year {
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
@@ -479,7 +479,7 @@ button, a { transition: var(--transition); }
   border-radius: var(--radius-14);
 }
 
-.featured-car-card .card-list {
+.featured-movie-card .card-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
@@ -488,24 +488,24 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
-.featured-car-card .card-list-item {
+.featured-movie-card .card-list-item {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.featured-car-card .card-list-item ion-icon {
+.featured-movie-card .card-list-item ion-icon {
   font-size: 20px;
   color: var(--carolina-blue);
   --ionicon-stroke-width: 38px;
 }
 
-.featured-car-card .card-item-text {
+.featured-movie-card .card-item-text {
   color: var(--independence);
   font-size: var(--fs-6);
 }
 
-.featured-car-card .card-price-wrapper {
+.featured-movie-card .card-price-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -513,23 +513,23 @@ button, a { transition: var(--transition); }
   gap: 15px;
 }
 
-.featured-car-card .card-price {
+.featured-movie-card .card-price {
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   color: var(--space-cadet);
 }
 
-.featured-car-card .card-price strong {
+.featured-movie-card .card-price strong {
   font-size: var(--fs-3);
   font-weight: var(--fw-400);
 }
 
-.featured-car-card .btn:last-child {
+.featured-movie-card .btn:last-child {
   --height: 36px;
   min-width: 100%;
 }
 
-.featured-car-card .fav-btn {
+.featured-movie-card .fav-btn {
   --background: var(--beau-blue);
   --color: var(--blue-jeans);
   --height: 36px;
@@ -537,14 +537,12 @@ button, a { transition: var(--transition); }
   --shadow-2: none;
 }
 
-.featured-car-card .fav-btn ion-icon { font-size: 18px; }
+.featured-movie-card .fav-btn ion-icon { font-size: 18px; }
 
-.featured-car-card .fav-btn:is(:hover, :focus) {
+.featured-movie-card .fav-btn:is(:hover, :focus) {
   --background: var(--lavender-blush);
   --color: var(--red-salsa);
 }
-
-
 
 
 
@@ -740,7 +738,7 @@ button, a { transition: var(--transition); }
 \*-----------------------------------*/
 
 .footer {
-  background: var(--alice-blue-4);
+  background: var(--mimi-pink);
   color: var(--independence);
 }
 
@@ -827,14 +825,14 @@ button, a { transition: var(--transition); }
 @media (min-width: 350px) {
 
   /**
-   * FEATURED CAR
+   * FEATURED MOVIE
    */
 
-  .featured-car-card .card-list { grid-template-columns: 1fr 1fr; }
+  .featured-movie-card .card-list { grid-template-columns: 1fr 1fr; }
 
-  .featured-car-card .card-price { margin-right: auto; }
+  .featured-movie-card .card-price { margin-right: auto; }
 
-  .featured-car-card .btn:last-child {
+  .featured-movie-card .btn:last-child {
     min-width: max-content;
     padding-inline: 15px;
   }
@@ -982,10 +980,10 @@ button, a { transition: var(--transition); }
 
 
   /**
-   * FEATURED CAR
+   * FEATURED MOVIE
    */
 
-  .featured-car-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .featured-movie-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 
 
@@ -1146,10 +1144,10 @@ button, a { transition: var(--transition); }
 
 
   /**
-   * FEATURED CAR 
+   * FEATURED MOVIE
    */
 
-  .featured-car-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .featured-movie-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 
 
